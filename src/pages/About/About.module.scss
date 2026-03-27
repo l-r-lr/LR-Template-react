@@ -1,0 +1,382 @@
+/* About 页面 -LR设计喵 */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-5);
+}
+
+// 开发者介绍
+.developerCard {
+  margin-bottom: var(--space-5);
+}
+
+.developerHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.developerContent {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.developerAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--border-default);
+  flex-shrink: 0;
+}
+
+.developerInfo {
+  flex: 1;
+}
+
+.developerName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.developerDesc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+  line-height: 1.5;
+}
+
+.developerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  background: var(--gray-100);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  color: var(--gray-900);
+  text-decoration: none;
+
+  &:hover {
+    background: var(--gray-200);
+    color: var(--gray-900);
+  }
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+.content {
+  line-height: 1.7;
+  color: var(--text-secondary);
+
+  p {
+    margin-bottom: var(--space-3);
+  }
+}
+
+// 技术栈
+.techStack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+.techIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-secondary);
+}
+
+.techInfo {
+  flex: 1;
+}
+
+.techName {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+}
+
+.techDesc {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+// 设计原则
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.principle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: var(--border-strong);
+  }
+}
+
+.principleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-2);
+  color: var(--text-secondary);
+}
+
+.principleTitle {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+  font-size: 0.875rem;
+}
+
+.principleDesc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+// 阴影展示
+.shadowGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+}
+
+.shadowItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.shadowBox {
+  width: 72px;
+  height: 72px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadowAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shadowLabel {
+  font-size: 0.6875rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+// 开源许可
+.licenseCard {
+  margin-top: var(--space-4);
+}
+
+.licenseContent {
+  line-height: 1.7;
+}
+
+.licenseTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.licenseDesc {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.licenseNotes {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+
+  ul {
+    list-style: disc;
+    padding-left: var(--space-5);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+
+    li {
+      margin-bottom: var(--space-1);
+    }
+  }
+}
+
+.licenseWarning {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.licenseWish {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+// 打赏支持
+.donateCard {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.donateContent {
+  text-align: center;
+}
+
+.donateTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.donateDesc {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.donateQrCode {
+  display: flex;
+  justify-content: center;
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+// QQ 群
+.qqGroupCard {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.qqGroupContent {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.qqGroupAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.qqGroupInfo {
+  flex: 1;
+}
+
+.qqGroupTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.qqGroupDesc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+  line-height: 1.5;
+}
+
+.qqGroupLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  background: var(--gray-100);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  color: var(--gray-900);
+  text-decoration: none;
+
+  &:hover {
+    background: var(--gray-200);
+    color: var(--gray-900);
+  }
+}

@@ -1,0 +1,249 @@
+/* 黑白灰单色设计系统，LR-UI风格等比例设计喵 */
+
+/* ============================================
+   基础灰度定义（黑白灰单色）
+   ============================================ */
+:root {
+  /* 纯白到纯黑 */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* 灰度色阶 - 中性灰 */
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  --gray-950: #0a0a0a;
+
+  /* ============================================
+     亮色主题（米白为主，黑色为强调）
+     ============================================ */
+  --bg-primary: #fafafa;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e8e8e8;
+  --bg-elevated: #ffffff;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --text-tertiary: #a3a3a3;
+  --text-inverse: #fafafa;
+
+  --border-subtle: #e8e8e8;
+  --border-default: #d4d4d4;
+  --border-strong: #a3a3a3;
+
+  /* 品牌色 - 黑白灰单色 */
+  --brand-primary: #171717;
+  --brand-secondary: #404040;
+  --brand-muted: #737373;
+
+  /* ============================================
+    LR-UI 风格圆角系统 - 等比例大圆角
+     ============================================ */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+
+  /* ============================================
+    LR-UI 风格间距系统 - 紧凑且对称
+     ============================================ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* ============================================
+     柔和阴影系统 - 亮色主题
+     ============================================ */
+  --shadow-ambient: 0 0 0 1px rgba(0, 0, 0, 0.03);
+
+  --shadow-primary:
+    rgba(0, 0, 0, 0.06) 0 1px 2px,
+    rgba(0, 0, 0, 0.04) 0 2px 4px;
+
+  --shadow-elevated:
+    rgba(0, 0, 0, 0.05) 0 4px 8px,
+    rgba(0, 0, 0, 0.04) 0 12px 12px,
+    rgba(0, 0, 0, 0.03) 0 24px 16px,
+    rgba(0, 0, 0, 0.02) 0 40px 20px,
+    transparent 0 60px 24px,
+    rgba(0, 0, 0, 0.03) 0 0 0 1px;
+
+  --shadow-floating:
+    rgba(0, 0, 0, 0.06) 0 6px 10px,
+    rgba(0, 0, 0, 0.05) 0 20px 20px,
+    rgba(0, 0, 0, 0.04) 0 36px 28px,
+    rgba(0, 0, 0, 0.02) 0 56px 32px,
+    transparent 0 80px 36px,
+    rgba(0, 0, 0, 0.04) 0 0 0 1px;
+
+  --shadow-modal:
+    rgba(0, 0, 0, 0.08) 0 8px 12px,
+    rgba(0, 0, 0, 0.06) 0 28px 32px,
+    rgba(0, 0, 0, 0.05) 0 52px 40px,
+    rgba(0, 0, 0, 0.03) 0 80px 48px,
+    transparent 0 112px 52px,
+    rgba(0, 0, 0, 0.06) 0 0 0 1px;
+
+  --shadow-dropdown:
+    rgba(0, 0, 0, 0.05) 0 3px 6px,
+    rgba(0, 0, 0, 0.04) 0 10px 12px,
+    rgba(0, 0, 0, 0.03) 0 20px 16px,
+    rgba(0, 0, 0, 0.02) 0 36px 20px,
+    transparent 0 56px 24px,
+    rgba(0, 0, 0, 0.04) 0 0 0 1px;
+
+  /* 过渡动画 */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   暗色主题（纯灰，无偏色）
+   ============================================ */
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1f1f1f;
+  --bg-elevated: #1a1a1a;
+  --bg-overlay: rgba(0, 0, 0, 0.8);
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a3;
+  --text-tertiary: #525252;
+  --text-inverse: #0a0a0a;
+
+  --border-subtle: #262626;
+  --border-default: #333333;
+  --border-strong: #525252;
+
+  --brand-primary: #f5f5f5;
+  --brand-secondary: #d4d4d4;
+  --brand-muted: #737373;
+
+  /* 暗色主题阴影 */
+  --shadow-ambient: 0 0 0 1px rgba(255, 255, 255, 0.06);
+
+  --shadow-primary:
+    rgba(0, 0, 0, 0.5) 0 1px 2px,
+    rgba(0, 0, 0, 0.3) 0 2px 4px;
+
+  --shadow-elevated:
+    rgba(0, 0, 0, 0.45) 0 4px 8px,
+    rgba(0, 0, 0, 0.35) 0 12px 12px,
+    rgba(0, 0, 0, 0.25) 0 24px 16px,
+    rgba(0, 0, 0, 0.15) 0 40px 20px,
+    transparent 0 60px 24px,
+    rgba(255, 255, 255, 0.06) 0 0 0 1px;
+
+  --shadow-floating:
+    rgba(0, 0, 0, 0.5) 0 6px 10px,
+    rgba(0, 0, 0, 0.4) 0 20px 20px,
+    rgba(0, 0, 0, 0.3) 0 36px 28px,
+    rgba(0, 0, 0, 0.2) 0 56px 32px,
+    transparent 0 80px 36px,
+    rgba(255, 255, 255, 0.08) 0 0 0 1px;
+
+  --shadow-modal:
+    rgba(0, 0, 0, 0.55) 0 8px 12px,
+    rgba(0, 0, 0, 0.45) 0 28px 32px,
+    rgba(0, 0, 0, 0.35) 0 52px 40px,
+    rgba(0, 0, 0, 0.25) 0 80px 48px,
+    transparent 0 112px 52px,
+    rgba(255, 255, 255, 0.08) 0 0 0 1px;
+
+  --shadow-dropdown:
+    rgba(0, 0, 0, 0.45) 0 3px 6px,
+    rgba(0, 0, 0, 0.35) 0 10px 12px,
+    rgba(0, 0, 0, 0.25) 0 20px 16px,
+    rgba(0, 0, 0, 0.15) 0 36px 20px,
+    transparent 0 56px 24px,
+    rgba(255, 255, 255, 0.08) 0 0 0 1px;
+}
+
+/* ============================================
+   全局滚动条样式 - 细窄不占空间
+   ============================================ */
+
+/* 防止滚动条出现/消失时页面抖动 */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Webkit 浏览器滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Firefox 滚动条 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-400) transparent;
+}
+
+/* ============================================
+   系统主题自动适配
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #141414;
+    --bg-tertiary: #1f1f1f;
+    --bg-elevated: #1a1a1a;
+    --bg-overlay: rgba(0, 0, 0, 0.8);
+
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+    --text-tertiary: #525252;
+    --text-inverse: #0a0a0a;
+
+    --border-subtle: #262626;
+    --border-default: #333333;
+    --border-strong: #525252;
+
+    --brand-primary: #f5f5f5;
+    --brand-secondary: #d4d4d4;
+    --brand-muted: #737373;
+
+    --shadow-ambient: 0 0 0 1px rgba(255, 255, 255, 0.06);
+    --shadow-primary: rgba(0, 0, 0, 0.5) 0 1px 2px, rgba(0, 0, 0, 0.3) 0 2px 4px;
+    --shadow-elevated: rgba(0, 0, 0, 0.45) 0 4px 8px, rgba(0, 0, 0, 0.35) 0 12px 12px, rgba(0, 0, 0, 0.25) 0 24px 16px, rgba(0, 0, 0, 0.15) 0 40px 20px, transparent 0 60px 24px, rgba(255, 255, 255, 0.06) 0 0 0 1px;
+    --shadow-floating: rgba(0, 0, 0, 0.5) 0 6px 10px, rgba(0, 0, 0, 0.4) 0 20px 20px, rgba(0, 0, 0, 0.3) 0 36px 28px, rgba(0, 0, 0, 0.2) 0 56px 32px, transparent 0 80px 36px, rgba(255, 255, 255, 0.08) 0 0 0 1px;
+    --shadow-modal: rgba(0, 0, 0, 0.55) 0 8px 12px, rgba(0, 0, 0, 0.45) 0 28px 32px, rgba(0, 0, 0, 0.35) 0 52px 40px, rgba(0, 0, 0, 0.25) 0 80px 48px, transparent 0 112px 52px, rgba(255, 255, 255, 0.08) 0 0 0 1px;
+    --shadow-dropdown: rgba(0, 0, 0, 0.45) 0 3px 6px, rgba(0, 0, 0, 0.35) 0 10px 12px, rgba(0, 0, 0, 0.25) 0 20px 16px, rgba(0, 0, 0, 0.15) 0 36px 20px, transparent 0 56px 24px, rgba(255, 255, 255, 0.08) 0 0 0 1px;
+  }
+}
