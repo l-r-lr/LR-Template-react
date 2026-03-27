@@ -1,7 +1,7 @@
 /* MainLayout 组件 -LR设计，使用 Lucide 图标喵 */
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import { Home, Info, Menu, X, Zap, BookOpen, Sun, Moon, Monitor } from 'lucide-react'
+import { Home, Info, Menu, X, BookOpen, Sun, Moon, Monitor } from 'lucide-react'
 import styles from './MainLayout.module.scss'
 import { useAppStore } from '@/stores'
 import { useThemeStore } from '@/stores'

@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 /**
  * 页脚组件属性接口喵
  */
-interface FooterProps {
+export interface FooterProps {
   /** 备案号 */
   icp?: string
   /** 版权所有者 */

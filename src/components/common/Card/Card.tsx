@@ -15,7 +15,7 @@ type CardPadding = 'small' | 'medium' | 'large'
 /**
  * 卡片组件属性接口喵
  */
-interface CardProps {
+export interface CardProps {
   /** 卡片变体，默认为 default */
   variant?: CardVariant
   /** 内边距大小，默认为 medium */

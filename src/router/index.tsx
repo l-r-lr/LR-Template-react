@@ -1,5 +1,5 @@
 /* 路由配置文件，定义应用的所有路由喵 */
-import { createBrowserRouter, Navigate, type RouteObject } from 'react-router-dom'
+import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 import { MainLayout } from '@/layouts/MainLayout'
 import { Home } from '@/pages/Home'
 import { About } from '@/pages/About'

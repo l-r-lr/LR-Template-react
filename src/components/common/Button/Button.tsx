@@ -15,7 +15,7 @@ type ButtonSize = 'small' | 'medium' | 'large'
 /**
  * 按钮组件属性接口喵
  */
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** 按钮变体，默认为 primary */
   variant?: ButtonVariant
   /** 按钮尺寸，默认为 medium */

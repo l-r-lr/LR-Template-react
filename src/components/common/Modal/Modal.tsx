@@ -12,7 +12,7 @@ type ModalSize = 'small' | 'medium' | 'large'
 /**
  * 模态框组件属性接口喵
  */
-interface ModalProps {
+export interface ModalProps {
   /** 是否显示模态框 */
   isOpen: boolean
   /** 关闭回调函数 */

@@ -6,7 +6,7 @@ import styles from './CodeBlock.module.scss'
 /**
  * 代码块组件属性接口喵
  */
-interface CodeBlockProps {
+export interface CodeBlockProps {
   /** 代码内容 */
   code: string
   /** 语言类型，默认为 typescript */

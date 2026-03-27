@@ -9,8 +9,6 @@ import {
   Moon,
   Monitor,
   Atom,
-  Code2,
-  FileType,
   Paintbrush,
   Box,
 } from 'lucide-react'
