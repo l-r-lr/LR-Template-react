@@ -1,0 +1,34 @@
+/* 代码块组件样式喵 */
+
+.codeBlock {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.pre {
+  margin: 0;
+  padding: var(--space-4);
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+.line {
+  display: flex;
+  min-height: 1.6em;
+}
+
+.lineNumber {
+  display: inline-block;
+  width: 2.5em;
+  text-align: right;
+  margin-right: var(--space-3);
+  color: var(--gray-500);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.lineContent {
+  flex: 1;
+}

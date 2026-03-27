@@ -1,0 +1,141 @@
+/* App 组件的 SCSS 模块样式，采用现代化简约设计喵 */
+
+// 变量定义
+$primary-color: #333;
+$secondary-color: #666;
+$bg-color: #f5f5f5;
+$card-bg: rgba(255, 255, 255, 0.8);
+$shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+$hover-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+// 容器样式
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// 头部样式
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $primary-color;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: $secondary-color;
+  font-weight: 400;
+}
+
+// 主体内容
+.main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+// 卡片样式 - 毛玻璃效果
+.card {
+  width: 100%;
+  background: $card-bg;
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: $shadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $hover-shadow;
+  }
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+// 列表样式
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.listItem {
+  font-size: 1rem;
+  color: $secondary-color;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(4px);
+  }
+}
+
+// 按钮样式 - 大圆角 + 毛玻璃
+.button {
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.9);
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(51, 51, 51, 1);
+    transform: scale(1.02);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// 响应式适配
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .button {
+    padding: 14px 36px;
+    font-size: 1rem;
+  }
+}

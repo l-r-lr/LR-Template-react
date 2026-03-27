@@ -1,0 +1,109 @@
+/* 头像组件样式 -LR设计喵 */
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  user-select: none;
+  transition: all var(--transition-fast);
+}
+
+// 形状
+.circle {
+  border-radius: var(--radius-full);
+}
+
+.square {
+  border-radius: var(--radius-sm);
+}
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+// 图片头像
+.imageAvatar {
+  object-fit: cover;
+  background: var(--bg-tertiary);
+}
+
+// 文字头像
+.textAvatar {
+  font-weight: 600;
+}
+
+.text {
+  font-size: 0.5em;
+  line-height: 1;
+}
+
+// 尺寸对应的文字大小
+.xs .text {
+  font-size: 10px;
+}
+
+.sm .text {
+  font-size: 12px;
+}
+
+.md .text {
+  font-size: 14px;
+}
+
+.lg .text {
+  font-size: 16px;
+}
+
+.xl .text {
+  font-size: 20px;
+}
+
+\2xl .text {
+  font-size: 24px;
+}
+
+// 颜色主题（使用灰度色，符合单色设计）
+.default {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.primary {
+  background: var(--gray-800);
+  color: var(--gray-100);
+}
+
+.secondary {
+  background: var(--gray-400);
+  color: var(--gray-100);
+}
+
+.success {
+  background: var(--gray-600);
+  color: var(--gray-100);
+}
+
+.warning {
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.danger {
+  background: var(--gray-900);
+  color: var(--gray-100);
+}
+
+// 可点击状态
+.clickable {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

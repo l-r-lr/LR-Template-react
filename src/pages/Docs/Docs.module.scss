@@ -1,0 +1,309 @@
+/* 文档页面样式 -LR设计喵 */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.subSectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-3);
+}
+
+// 文档卡片样式
+.docCard {
+  margin-bottom: var(--space-4);
+}
+
+.docHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.docIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+}
+
+.docTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.docContent {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.detailList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.code {
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.8125rem;
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.detailDesc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+// CSS 变量指南网格
+.variablesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.variableCard {
+  height: 100%;
+}
+
+.variableHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.variableIcon {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.variableTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.variableList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.variableItem {
+  padding: var(--space-3);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.variableName {
+  display: block;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.8125rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.variableUsage {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.variableExample {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+// 快速开始
+.quickStart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.quickStartItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--text-primary);
+  color: var(--text-inverse);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.command {
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+// AI 使用规范
+.aiNotice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-5);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.aiGuidelines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.aiCard {
+  height: 100%;
+}
+
+.aiHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.aiIcon {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.aiTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.aiRules {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.aiRule {
+  position: relative;
+  padding-left: var(--space-4);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+
+  &::before {
+    content: '•';
+    position: absolute;
+    left: var(--space-1);
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+}
+
+// 代码示例
+.codeExample {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+}
+
+.pre {
+  margin: 0;
+  padding: var(--space-4);
+  overflow-x: auto;
+
+  code {
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+}
